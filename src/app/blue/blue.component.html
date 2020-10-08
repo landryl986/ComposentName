@@ -1,0 +1,9 @@
+<div class="blue-div">
+  <p>blue component</p>
+  <div *ngFor="let child of childs">
+    <app-orange [index]="child.id" [height]="child.height"></app-orange>
+  </div>
+
+  <!-- <app-orange [myId]= 1></app-orange>
+  <app-orange [myId]= 2></app-orange> -->
+</div>

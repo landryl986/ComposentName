@@ -1,0 +1,13 @@
+.blue-div{
+  width: 48%;
+  height: 650px;
+  border: 1px solid deepskyblue;
+  margin: 1% auto auto auto;
+  display: block;
+}
+
+.blue-div p{
+  color: deepskyblue;
+  font-family: "Arial Black";
+  margin-left: 5%;
+}

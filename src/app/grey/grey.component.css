@@ -1,0 +1,17 @@
+.grey-div{
+  left: 0;
+  width: 25%;
+  height: 650px;
+  border: 1px solid grey;
+  margin-top: 1%;
+  margin-left: 0.5%;
+  position: absolute;
+  float: left;
+}
+
+.grey-div p{
+  color: grey;
+  font-family: "Arial Black";
+  margin-left: 5%;
+  margin-bottom: 30px;
+}

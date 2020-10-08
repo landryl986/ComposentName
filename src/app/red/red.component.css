@@ -1,0 +1,44 @@
+.red-div{
+  right: 0;
+  width: 25%;
+  height: 650px;
+  border: 1px solid red;
+  margin: 1% 0.5% auto auto;
+  position: absolute;
+  float: right;
+}
+
+.red-div p{
+  color: red;
+  font-family: "Arial Black";
+  margin-left: 5%;
+  margin-bottom: 30px;
+}
+
+.myButton {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:11px;
+	font-weight:bold;
+	padding:9px 19px;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #3d768a;
+  margin-left: 5%;
+  margin-bottom: 3%;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+

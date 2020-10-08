@@ -1,0 +1,13 @@
+.orange-div{
+  left: 0;
+  width: 80%;
+  height: 250px;
+  border: 1px solid orange;
+  margin: 1% auto auto auto;
+}
+
+.orange-div p{
+  color: orange;
+  font-family: "Arial Black";
+  margin-left: 5%;
+}
