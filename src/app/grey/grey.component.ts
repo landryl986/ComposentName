@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-grey',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GreyComponent implements OnInit {
 
-  ids: Array<number> = [1, 2, 3, 4]
+  ids: Array<number> = []
 
   constructor() { }
 
