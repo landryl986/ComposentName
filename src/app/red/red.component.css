@@ -1,8 +1,16 @@
+.card{
+  right: 15%;
+  width: 200%;
+  border: 1px solid red;
+  margin: 1% 0.5% auto auto;
+  float: right;
+  text-align: center;
+}
+
 .red-div{
   right: 0;
   width: 25%;
   height: 650px;
-  border: 1px solid red;
   margin: 1% 0.5% auto auto;
   position: absolute;
   float: right;

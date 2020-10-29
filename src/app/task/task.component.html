@@ -1,8 +1,13 @@
-<div class="task-div">
-    <p>task id {{task.id}}</p>
-    <p>titre</p>
-    <p>{{task.titre}}</p>
-    <p>Description</p>
-    <p>{{task.description}}</p>
-    <a href="#" class="myButton" (click)="selectTask()">Delete</a>
+<div>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h1 class="card-title">{{task.titre}}</h1>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">id : {{task.id}}</li>
+          <li class="list-group-item">{{task.description}}</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+        <a href="#" class="btn btn-dark" (click)="selectTask()">Delete</a>
+      </div>
+    </div>
 </div>
