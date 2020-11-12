@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ServiceAuthentificationService } from '../services/service-authentification.service';
 
 @Component({
   selector: 'app-green',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GreenComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(private route: Router, private service: ServiceAuthentificationService) { }
 
   ngOnInit(): void {
+  }
+
+  disconect(): void{
+    this.service.disconect();
   }
 
 }

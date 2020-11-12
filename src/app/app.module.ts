@@ -12,6 +12,8 @@ import { RedComponent } from './red/red.component';
 import { TaskComponent } from './task/task.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { PortalComponent } from './portal/portal.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { FormsModule } from '@angular/forms';
     OrangeComponent,
     RedComponent,
     TaskComponent,
+    LoginComponent,
+    PortalComponent
   ],
   imports: [
     BrowserModule,
