@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ServiceAuthentificationService } from '../services/service-authentification.service';
+import { ServiceAuthentificationService } from '../../../login/Services/service-authentification.service';
 
 @Component({
   selector: 'app-green',

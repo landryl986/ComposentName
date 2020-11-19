@@ -1,7 +1,7 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { TaskComponent } from '../task/task.component';
-import {Task} from '../task';
-import {TaskServiceService} from '../services/task-service.service';
+import {Task} from '../../../task';
+import {TaskServiceService} from '../../Services/task-service.service';
 import { NgForOf } from '@angular/common';
 
 @Component({

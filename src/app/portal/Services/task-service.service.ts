@@ -1,6 +1,6 @@
 import { renderFlagCheckIfStmt } from '@angular/compiler/src/render3/view/template';
 import { Injectable } from '@angular/core';
-import { Task } from '../task';
+import { Task } from '../../task';
 
 @Injectable({
   providedIn: 'root'
