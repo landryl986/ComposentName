@@ -1,0 +1,13 @@
+.character-div{
+  width: 48%;
+  height: 650px;
+  border: 1px solid black;
+  margin: 1% auto auto auto;
+  display: block;
+}
+
+.character-div p{
+  color: black;
+  font-family: "Arial Black";
+  margin-left: 5%;
+}
