@@ -1,5 +1,5 @@
 export interface ICharacter{
-  id: number;
+  Id: number;
   Name: string;
   HitPoints: number;
   Strength: number;

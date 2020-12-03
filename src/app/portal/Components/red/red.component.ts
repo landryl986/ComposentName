@@ -29,7 +29,7 @@ export class RedComponent implements OnInit {
     return this._taskService.returnTasks();
   }
 
-  createNewTask() {
+  createNewTask(): void {
     this.task.id = this.idIncrement++;
     this._taskService.addNewTask(this.task);
     this.task = {} as Task;

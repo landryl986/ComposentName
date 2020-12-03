@@ -18,7 +18,7 @@ export class TaskComponent implements OnInit {
 
   }
 
-  selectTask():void {
+  selectTask(): void {
     this.taskSelected.emit(this.task);
   }
 }

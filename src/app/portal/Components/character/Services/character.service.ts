@@ -17,4 +17,12 @@ export class CharacterService {
   GetAllCharacters(): Observable<Array<ICharacter>> {
     return this.http.get<[ICharacter]>(this.route);
   }
+
+  AddCharacter(newCharacter: ICharacter): Observable<[ICharacter]> {
+    return this.http.post<[ICharacter]>(this.route, newCharacter);
+  }
+
+  DelCharacter(id: number): Observable<[ICharacter]> {
+    return this.http.delete<[ICharacter]>(this.route + '/' + id.toString());
+  }
 }
