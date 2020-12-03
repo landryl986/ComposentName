@@ -10,7 +10,7 @@ import {ICharacter} from './Interfaces/ICharacter';
 export class CharacterComponent implements OnInit {
   characters: Array<ICharacter>;
   character = {} as ICharacter;
-  id = 0;
+  id: number;
 
   // tslint:disable-next-line:variable-name
   constructor(private _characterService: CharacterService) {
@@ -33,7 +33,6 @@ export class CharacterComponent implements OnInit {
 
   }
   CreateCharacter(): void{
-    this.character.Id = this.id++;
     this._characterService.AddCharacter(this.character).subscribe(
       data =>
       {
@@ -45,6 +44,9 @@ export class CharacterComponent implements OnInit {
       { }
     );
     this.character = {} as ICharacter;
+  }
+  UpdateCharacter(character: ICharacter): void{
+    this._characterService.UpdateCharacter(character).subscribe(() => this.onGetCharacters());
   }
   delCharacter(character: ICharacter): void{
     this._characterService.DelCharacter(character.Id).subscribe(() => this.onGetCharacters());

@@ -12,12 +12,17 @@ export class CharacterCardComponent implements OnInit {
 
   @Input() character: ICharacter;
   @Output() characterSelected = new EventEmitter<ICharacter>();
+  @Output() characterSelectedUpdate = new EventEmitter<ICharacter>();
 
   ngOnInit(): void {
   }
 
   selectCharacter(): void {
     this.characterSelected.emit(this.character);
+  }
+
+  selectCharacterUpdate(): void {
+    this.characterSelectedUpdate.emit(this.character);
   }
 
 }

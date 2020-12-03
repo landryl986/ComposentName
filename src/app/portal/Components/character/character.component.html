@@ -60,7 +60,7 @@
           </div>
         </div>
         <div *ngFor="let character of characters">
-          <app-character-card [character]="character" (characterSelected)="delCharacter($event)"></app-character-card>
+          <app-character-card [character]="character" (characterSelectedUpdate)="UpdateCharacter($event)"  (characterSelected)="delCharacter($event)"></app-character-card>
         </div>
       </div>
     </div>
