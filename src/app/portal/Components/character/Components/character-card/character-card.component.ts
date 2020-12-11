@@ -8,6 +8,8 @@ import {ICharacter} from '../../Interfaces/ICharacter';
 })
 export class CharacterCardComponent implements OnInit {
 
+  imagePath: string;
+
   constructor() { }
 
   @Input() character: ICharacter;
@@ -15,10 +17,20 @@ export class CharacterCardComponent implements OnInit {
   @Output() characterSelectedUpdate = new EventEmitter<ICharacter>();
 
   ngOnInit(): void {
+    this.GetImagePath();
   }
 
   selectCharacter(): void {
     this.characterSelected.emit(this.character);
+  }
+
+  GetImagePath(): string {
+    if (this.character.Strength >= 5){
+      this.imagePath = 'assets/Images/strong.png';
+    } else {
+      this.imagePath = 'assets/Images/faible.jpg';
+    }
+    return this.imagePath;
   }
 
   selectCharacterUpdate(): void {

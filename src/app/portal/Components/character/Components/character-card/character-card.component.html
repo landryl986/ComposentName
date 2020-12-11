@@ -11,11 +11,13 @@
   </head>
   <body>
     <div class="card" style="width: 18rem;">
-      <img src="./app/portal/Components/character/Images/strong.png" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">{{character.Name}}</h5>
       </div>
       <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <img [src]="imagePath" class="card-img-top">
+        </li>
         <li class="list-group-item">id : {{character.Id}}</li>
         <li class="list-group-item">Défense : {{character.Defense}}</li>
         <li class="list-group-item">Intelligence : {{character.Intelligence}}</li>
