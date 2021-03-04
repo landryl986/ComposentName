@@ -16,7 +16,7 @@
       </div>
       <ul class="list-group list-group-flush">
         <li class="list-group-item">
-          <img [src]="imagePath" class="card-img-top">
+          <img [src]="https://localhost:5001/characters/{{character.Id}}/avatar" class="card-img-top">
         </li>
         <li class="list-group-item">id : {{character.Id}}</li>
         <li class="list-group-item">Défense : {{character.Defense}}</li>
@@ -26,6 +26,16 @@
       </ul>
       <div class="card-body">
         <a class="btn btn-outline-dark" (click)="selectCharacter()">DELETE</a>
+        <div>
+          <form [formGroup] = "uploadForm" (ngSubmit)="onSubmit()">
+            <div>
+              <input type="file" name="profile" (change)="onFileSelect($event)" />
+            </div>
+            <div>
+              <button type="submit">Upload</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </body>

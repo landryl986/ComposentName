@@ -10,7 +10,7 @@ import {ICharacter} from './Interfaces/ICharacter';
 export class CharacterComponent implements OnInit {
   characters: Array<ICharacter>;
   character = {} as ICharacter;
-  id: number;
+  id: number
 
   // tslint:disable-next-line:variable-name
   constructor(private _characterService: CharacterService) {

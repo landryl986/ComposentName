@@ -8,7 +8,6 @@ import {Observable} from 'rxjs';
 })
 export class CharacterService {
   character: ICharacter;
-  id = 0;
   route = 'https://localhost:5001/characters';
 
   constructor(private http: HttpClient) {

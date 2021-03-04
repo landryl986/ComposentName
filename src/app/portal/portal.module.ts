@@ -9,7 +9,7 @@ import {TaskComponent} from './Components/task/task.component';
 import {PortalComponent} from './Components/portal.component';
 import {PortalRoutingModule} from './portal-routing.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {BrowserModule} from '@angular/platform-browser';
 import { CharacterComponent } from './Components/character/character.component';
 import { CharacterCardComponent } from './Components/character/Components/character-card/character-card.component';
@@ -34,7 +34,8 @@ import { CharacterCardComponent } from './Components/character/Components/charac
     BrowserModule,
     BrowserAnimationsModule,
     PortalRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class PortalModule { }

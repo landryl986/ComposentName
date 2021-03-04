@@ -6,4 +6,5 @@ export interface ICharacter{
   Defense: number;
   Intelligence: number;
   Class: number;
+  Image: File;
 }
