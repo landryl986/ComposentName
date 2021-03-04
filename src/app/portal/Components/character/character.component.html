@@ -1,0 +1,68 @@
+<html>
+  <div class="character-div">
+    <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    </head>
+
+    <div class="card border-dark mb-3" style="max-width: autoŒ;">
+      <div class="card-header">Characters</div>
+      <div class="card-body text-danger">
+        <h1 class="card-title">Character</h1>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">New
+          Character</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Character</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Nom:</label>
+                  <input type="text" class="form-control" id="recipient-name" [(ngModel)]="character.Name">
+                </div>
+                <div class="form-group">
+                  <label for="recipient-class" class="col-form-label">Class:</label>
+                  <input type="number" class="form-control" id="recipient-class" [(ngModel)]="character.Class">
+                </div>
+                <div class="form-group">
+                  <label for="recipient-defense" class="col-form-label">Defense:</label>
+                  <input type="number" class="form-control" id="recipient-defense" [(ngModel)]="character.Defense">
+                </div>
+                <div class="form-group">
+                  <label for="recipient-intelligence" class="col-form-label">Intelligence:</label>
+                  <input type="number" class="form-control" id="recipient-intelligence" [(ngModel)]="character.Intelligence">
+                </div>
+                <div class="form-group">
+                  <label for="recipient-hitPoints" class="col-form-label">HitPoints:</label>
+                  <input type="number" class="form-control" id="recipient-hitPoints" [(ngModel)]="character.HitPoints">
+                </div>
+                <div class="form-group">
+                  <label for="recipient-Strength" class="col-form-label">Strength:</label>
+                  <input type="number" class="form-control" id="recipient-Strength" [(ngModel)]="character.Strength">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" (click)="CreateCharacter()">Create</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div *ngFor="let character of characters">
+          <app-character-card [character]="character" (characterSelectedUpdate)="UpdateCharacter($event)"  (characterSelected)="delCharacter($event)"></app-character-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>

@@ -17,7 +17,7 @@ export class TaskServiceService {
   }
 
   delTask(Task): void {
-    if (confirm("Are you sure to delete Task number : " + Task.id)) {
+    if (confirm('Are you sure to delete Task number : ' + Task.id)) {
       this.tasks.forEach(element => {
         if (element.id == Task.id) {
           this.tasks.splice(this.tasks.indexOf(Task), 1);

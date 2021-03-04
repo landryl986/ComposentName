@@ -4,6 +4,7 @@ import { BlueComponent } from './Components/blue/blue.component';
 import { PortalComponent } from './Components/portal.component';
 import { RedComponent } from './Components/red/red.component';
 import { LoggedGuardGuard } from '../guard/logged-guard.guard';
+import {CharacterComponent} from './Components/character/character.component';
 
 const routes: Routes = [
   {
@@ -11,7 +12,7 @@ const routes: Routes = [
     component: PortalComponent,
     canActivate: [LoggedGuardGuard],
     children: [
-      {path: '', component: RedComponent},
+      {path: 'character', component: CharacterComponent},
       {path: 'red', component: RedComponent},
       {path: 'blue', component: BlueComponent}
     ]
